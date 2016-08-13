@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table</title>
+  <!-- This includes the style sheet -->
+  <link href="HTML5_Stylesheet_Sample.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script>  <!-- Javascript code -->
+   //Make older browser aware of new HTML5 layout tags
+   'header nav aside article footer section'.replace(/\w+/g, function (n) { document.createElement(n) })
+  </script>
+ 
+  <div id="wrapper">
+    <!-- Page header contains branding information -->
+    <header>
+        My First Web Page!
+    </header>
+    
+    <!-- Sidebar content -->
+    <aside>
+      <!-- Nav section links -->
+      <nav>
+       <a href="HTML5_Sample_Home.html">Home</a> 
+       <a href="HTML5_Sample_Video.html">Video Demo</a> 
+       <a href="HTML5_Sample_Audio.html">Audio Demo</a>
+       <a href="HTML5_Sample_Table.html">Table Demo</a>
+       <a href="HTML5_Sample_Thumbnail Gallery.html">Photo Demo</a>
+       <a href="HTML5_Sample_FAQs.html">FAQs Demo</a>
+       <!--<a href="contact.htm">Contact Me</a>
+       <a href="about.htm">About Me</a>
+       -->
+      </nav>
+    </aside>
+    
+    <!-- Article is the main content, story, or article -->
+    <article>
+      <h1>What I am going to demonstrate on this page</h1>
+      <p> This is my first web page. On this page I am going to demonstrate
+            several different types of things. I will have a banner header and
+            footer, a second and third header, a paragraph, a side-bar, and a
+            demo of a table. As you scroll over the table it will highlight where
+            the cursor is.
+            
+            I will also have a background behind the main page and the main page
+            will look like it is raised off the background. The page will resize
+            based on the size of the window, to a point.
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, in culpa qui officia deserunt mollit anim id est laborum</p>
+                
+      <!-- centers anything stuck in this div on the page -->
+      <div class="centerall">
+          
+        <h2>This is my Table Demo!</h2>
+      
+                <!-- Start table --> 
+        <table> 
+          <!-- First row is header cells --> 
+          <tr> 
+            <th>House Salad</th> 
+            <th>Price</th> 
+            <th>Vegan</th> 
+          </tr> 
+       
+          <!-- Row 2 --> 
+          <tr> 
+            <td>Chef Special</td> 
+            <td>$8.50</td> 
+            <td><img src="pix/check.png" alt="vegan" /></td> 
+          </tr> 
+   
+          <!-- Row 3 --> 
+          <tr> 
+            <td>Cobb</td> 
+            <td>$9.00</td> 
+            <td></td> 
+          </tr> 
+   
+          <!-- Row 4 --> 
+          <tr> 
+            <td>Summer Greens</td> 
+            <td>$10.00</td> 
+            <td><img src="pix/check.png" alt="vegan" /></td> 
+          </tr> 
+        </table><!-- End table -->
+        <br><br><br>
+      </div><!-- End centerall div -->
+    </article><!-- End main article 
+    
+    <!-- Footer section at page bottom -->
+    <footer>
+      <table>
+        <tr>
+        <td>Copyright &copy; 2014, Owner, All Rights Reserved</td>
+        <td style="text-align:right">Designed by Laurie Smith</td>
+        </tr>
+      </table>
+    </footer>
+    
+  </div>  <!-- End wrapper -->
+  
+</body>
+</html>
+

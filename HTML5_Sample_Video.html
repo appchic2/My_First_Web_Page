@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video</title>
+  <!-- This includes the style sheet -->
+  <link href="HTML5_Stylesheet_Sample.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script>  <!-- Javascript code -->
+   //Make older browser aware of new HTML5 layout tags
+   'header nav aside article footer section'.replace(/\w+/g, function (n) { document.createElement(n) })
+  </script>
+ 
+  <div id="wrapper">
+    <!-- Page header contains branding information -->
+    <header>
+        My First Web Page!
+    </header>
+    
+    <!-- Sidebar content -->
+    <aside>
+      <!-- Nav section links -->
+      <nav>
+       <a href="HTML5_Sample_Home.html">Home</a> 
+       <a href="HTML5_Sample_Video.html">Video Demo</a> 
+       <a href="HTML5_Sample_Audio.html">Audio Demo</a>
+       <a href="HTML5_Sample_Table.html">Table Demo</a>
+       <a href="HTML5_Sample_Thumbnail Gallery.html">Photo Demo</a>
+       <a href="HTML5_Sample_FAQs.html">FAQs Demo</a>
+       <!--<a href="contact.htm">Contact Me</a>
+       <a href="about.htm">About Me</a>
+       -->
+      </nav>
+    </aside>
+    
+    <!-- Article is the main content, story, or article -->
+    <article>
+        <h1>What I am going to demonstrate on this page</h1>
+        <p> This is my first web page. On this page I am going to demonstrate
+            several different types of things. I will have a banner header and
+            footer, a second and third header, a paragraph, a side-bar, an MP4
+            video with controls, a slideshow of pictures from my local
+            directory, a youtube video and a video from another website.
+            
+            I will also have a background behind the main page and the main page
+            will look like it is raised off the background. The page will resize
+            based on the size of the window, to a point.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, in culpa qui officia deserunt mollit anim id est laborum</p>
+                
+        <!-- centers anything stuck in this div on the page -->
+        <div class="centerall">
+         
+         <h2> And Now For My Video Demo! </h2>
+          <br><br><!-- Adds a line break so each  element is on its own line -->
+          </p><p>This is an MP4 video!</p>
+          <!-- This provides a a video window with controls -->
+          <video controls poster="pix/airheads.png" class="raised">
+            <source src="pix/airheads.mp4" type="video/mp4" />
+            <source src="pix/airheads.ogv" type="video/ogg" />
+            <source src="pix/airheads.webm" type="video/webm" />
+            Sorry, your browser does not support HTML5 video. Consider updating to a newer browser.
+          </video>
+          <br><br> <!-- Adds a line break so each video element is on its own line -->
+            
+          <!-- Play video slideshow -->
+          <p>This is a slideshow!</p>
+          <video autoplay loop class="raised">
+            <source src="pix/slideshow.mp4" type="video/mp4" />
+            <source src="pix/slideshow.ogv" type="video/ogg" />
+            <source src="pix/slideshow.webm" type="video/webm" />
+            Sorry, your browser does not support HTML5 video. Consider updating to a newer browser.
+          </video>
+          <br> </br><!-- Adds a line break so each  element is on its own line -->        
+          <br><br> <!-- Adds a line break so each video element is on its own line -->
+          
+          <video controls>
+            <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
+          </video>
+
+          <p>This is a website video!
+          </p>
+          
+          <br><br><!-- Adds a line break so each  element is on its own line -->
+          <br><br><!-- Adds a line break so each  element is on its own line --> 
+          <section>
+            <iframe class="youtube-player" type="text/html"
+              src="http://www.youtube.com/embed/EQ1HKCYJM5U?feature=player_detailpage"
+              width="640" height="360"
+              frameborder="0" allowfullscreen>
+            </iframe>
+            <figcaption> <em>This is a youtube video!</em> </figcaption>
+          </section>
+          <br><br><!-- Adds a line break so each  element is on its own line --> 
+    
+        </div><!-- End centerall div -->
+    
+
+    </article><!-- End main article 
+    
+    <!-- Footer section at page bottom -->
+    <footer>
+      <table>
+        <tr>
+        <td>Copyright &copy; 2014, Owner, All Rights Reserved</td>
+        <td style="text-align:right">Designed by Laurie Smith</td>
+        </tr>
+      </table>
+    </footer>
+    
+  </div>  <!-- End wrapper -->
+  
+</body>
+</html>
+

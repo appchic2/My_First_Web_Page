@@ -1,0 +1,232 @@
+/* stylesheet.css */
+/* Style rule for the body element */
+body{
+  background-color:yellow; /* set the bbackground color to yellow */
+  background-image:url(pix/bkgleather2.jpg); /* overrides the background color yellow */
+  /* Default font styling */
+  font: 10pt Arial, Helvetica, Sans-Serif;
+  color:#5d3f25;
+  /* margin:0; makes the margin above the wrapper flush to the top of the browser but I didn't like that */
+     
+}
+/* Style rule for the wrapper div AKA Container Div - contents of page */
+#wrapper{
+  /* originally a set width:900px; */
+  /* changed to a % so it expands and contracts on different screen sizes and added max w/h */
+  width: 90%;
+  min-width:600px;
+  max-width:1200px; /* after that doesn't look good */
+  margin:2em auto; /* Sets margin at the top of the wrapper; chged from 0 */
+  background-color:white;  
+  border: solid 2px #4c2e16; /* adds the border style, width,  and color */
+  border-radius:20px; /* gives the height and width of the curve on the corner */
+  box-shadow:8px 8px 8px black; /* horiz offset, vert offset, blur, color */
+  padding:16px; /* adds some space between the writing and the edges of the wrapper div */
+
+}
+
+/* Eliminate default margins for all heading types. Put the generic here and */
+/* anything more specific to a heading will go closer to the heading and override it. */
+h1, h2, h3, h4, h5, h6{
+  margin:0;
+}
+
+/* Make HTML5 layout elements block elements for older browsers */
+header, nav, aside, article, footer, section{
+ display:block;
+}
+/*================================== Layout Sections */
+/*======== Styling for page header */
+header {
+ height: 80px; /* Font size, line-height, and family */
+ font: 40px/80px Impact, Gadget, Fantasy;
+ text-align: center;
+ /* Background color, image, position */
+ background-color: #FF8C00;
+ background-image: url(pix/headerlogo.png);
+ background-repeat: no-repeat;
+ background-position: 10px center; /* Round the top corners */
+ border-top-left-radius: 18px;
+ border-top-right-radius: 18px;
+}
+
+/*======== Styling for the sidebar section (aside) */
+aside {
+ width: 130px;
+ padding: 10px;
+ float: left;
+}
+
+/*======== Styling for links in the nav section */
+nav a {
+ display: block;
+ background-color: #FF8C00;
+ color: #5d3f25;
+ font-weight: bold;
+ text-align: center; 
+ /* As wide as the content width */
+ width: 100%; 
+ /* Small vertical margin, zero side margin */
+ margin: 2px 0; 
+ /* Bigger text */
+ font-size: 22px; 
+ /* Some extra height */
+ padding: 12px 0; 
+ /* No underline or dotted outline */
+ text-decoration: none;
+ outline: none;
+}
+nav a:link, nav a:visited {
+ background-color: #FF8C00;
+ color: #5d3f25;
+}
+/* Styling for hover, tap, and current page */
+nav a:hover, nav a:active, a.currentpage {
+ background-color: #5d3f25;
+ color: #FF8C00;
+}
+   
+
+/*======== Styling for the article section */
+article {
+ padding: 10px;
+ /* Left margin should match neighboring column full width */
+ margin-left: 150px;
+ border-left: solid 1px #FF8C00;
+ }
+
+/* ==== Styling for tables in the article section */
+/* Styling for the table as a whole */
+article table {
+ /* Remove gaps between table cells */
+ border-collapse: collapse;
+ /* Font size, family, and color */
+ font: 12pt Times, "Times New Roman" , Serif;
+ color: #4c2e16;
+ /* top/bottom and side margins (auto for centering) */
+ margin: 1em auto;
+}
+/* Table header cells */
+article th {
+ background-color: #4c2e16;
+ color: white;
+}
+/* Header and data cells */
+article th, article td {
+ border: solid 1px #5d3f25;
+ padding: 2px 4px;
+}
+/* Give even-numbered rows tan background color */
+article tr:nth-child(even) {
+ background-color: #c6a586;
+}
+/* Right align content in column 2 data cells */
+article td:nth-child(2) {
+ text-align: right;
+}
+/* Center content in column 3 data cells */
+article td:nth-child(3) {
+ text-align: center;
+}
+/* Highlight table row on hover */
+article tr:hover {
+ background-color: #ff6;
+ cursor: default;
+}
+/* ==== Styles for links and link states in the article section. === */
+/* Unvisited links */
+article a:link {
+ color: #0c391c;
+}
+/* Visited links */
+article a:visited {
+ color: #af4600;
+}
+/* Mouse pointer on link */
+article a:hover {
+ background-color: #bc9f81;
+ color: #1e2953;
+}
+/* Mouse pointer on link and left button down */
+article a:active {
+ background-color: #1e2953;
+ color: #bc9f81;
+}
+/* ==== Styling for footer */
+footer {
+ height: 35px;
+ padding: 5px;
+ background-color: #FF8C00;
+ border-bottom-left-radius: 18px;
+ border-bottom-right-radius: 18px;
+}
+/* Styling for table in footer */
+footer table {
+ width: 98%;
+ margin: 5px auto;
+ color:#4c2e16; /* writing */
+}
+/*========================= More general style rules and classes */
+
+/* Style for h1 headings */
+h1{
+  font:italic small-caps bold 24px "Arial Black", Gadget, Sans-Serif;
+  text-shadow:-2px -2px 2px #a48362;
+  text-align:center;
+}
+/* Style for h2 headings */
+h2{
+  font:italic small-caps bold 18px "Arial Black", Gadget, Sans-Serif;
+  text-shadow:-1px -1px 1px #a48362;
+}
+h3{
+    font-family: times new roman, times, serif;
+    color:blue;
+}
+h4{
+    font-family: ariel, helvetica, sans-serif;
+    font-weight: normal;  /*remove the bold default */
+    color: red;
+}
+
+
+* Style for paragraphs */
+p{
+  line-height:1.5;
+  margin-top:0; /* reduces the margin at the top of a paragraph */
+}
+
+/* === Style classes === */
+/* Highlight any span of text */
+.hilite{
+   background-color:yellow;
+}
+/* Create raised appearance with border, rounded corners, and shadow */
+/* Works with images, tables, and block elements (div, p, and headings) */
+.raised{
+   border:solid 1px gray;
+   border-radius: 5px;
+   box-shadow:5px 5px 5px gray;
+}
+/* Image floating to the left of neighboring text */
+img.left {
+   float: left;
+   width: 30%;
+   margin-right: 10px; 
+}
+/* Image floating to the right of neighboring text */
+img.right {
+   float: right;
+   width: 30%;
+   margin-left: 10px; 
+}
+/* Use class="centerall" in p or div to center
+   all text and images inside the element */
+.centerall{
+    text-align:center;
+    /* Clear any floating elements */
+    clear:both;
+}
+
+
+

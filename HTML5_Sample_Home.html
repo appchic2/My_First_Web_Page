@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+ 
+  <div id="wrapper">
+    <!-- Page header contains branding information -->
+    <header>
+        My First Web Page!
+    </header>
+    
+    <!-- Sidebar content -->
+    <aside>
+      <!-- Nav section links -->
+      <nav>
+       <a href="HTML5_Sample_Home.html">Home</a> 
+       <a href="HTML5_Sample_Video.html">Video Demo</a> 
+       <a href="HTML5_Sample_Audio.html">Audio Demo</a>
+       <a href="HTML5_Sample_Table.html">Table Demo</a>
+       <a href="HTML5_Sample_Thumbnail Gallery.html">Photo Demo</a>
+       <a href="HTML5_Sample_FAQs.html">FAQs Demo</a>
+       <!--<a href="contact.htm">Contact Me</a>
+       <a href="about.htm">About Me</a>
+       -->
+      </nav>
+    </aside>
+    
+    <!-- Article is the main content, story, or article -->
+    <article>
+        <h1>What I am going to demonstrate on this page</h1>
+        <p> This is my first web page. On this page I am going to demonstrate
+            several different types of things. I will have a banner header and
+            footer, first, third and fourth level headers, a side-bar, some paragraphs
+            containing various inline elements, and some sample lists. Various
+            styling will be also be done in an external style sheet.
+            This site has multiple pages each defined in a separate HTML file. 
+            
+<html>
+<head>
+  <title>Home</title>
+  <!-- This includes the style sheet -->
+  <link href="HTML5_Stylesheet_Sample.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script>  <!-- Javascript code -->
+   //Make older browser aware of new HTML5 layout tags
+   'header nav aside article footer section'.replace(/\w+/g, function (n) { document.createElement(n) })
+  </script>
+            I will also have a background behind the main page and the main page
+            will look like it is raised off the background. The page will resize
+            based on the size of the window, to a point.
+        </p>
+        <!-- Spce filler for a paragraph -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, in culpa qui officia deserunt mollit anim id est laborum</p>
+                
+         
+         <h3>This is a Sample Paragraph with inline elements</h3>
+        <p>I used the "abbr" tag so a screen reader for the blind doesn't try and
+            pronounce the non-word as a word. I also used the "title=" attribute
+             to define the abbreviation so it can appear as a screen tip or be read
+             by the screen reader. Although you can style these elements in CSS as well,
+             the HTML tags "strong" and "em" direct a screen reader to emphasize the word
+             when it is being read. The CSS styling is strictly visual. 
+        </p>
+         
+        <h4> ** Hover over the word "abbr" in the paragraph below to see a screen tip.</h4>
+        <p>This is a paragraph with an <abbr title="abbreviation">abbr</abbr>, <b>bold</b>,
+            <i>italic</i>,<br><em>em-italic</em>, <q>quotes</q>, <small>small</small>, <span>span</span>
+            and <strong>strong</strong><br> inline elements.
+        </p>
+        
+        <h3>This is a Sample Paragraph with inline image</h3>
+        <p>
+            This paragraph is using the img tag to display a <img src="pix/tinycool.png" alt="cool">
+            tiny image in<br>the content area. It will diplay in it's original size and it will render
+            like an<br>inline element, not causing any line breaks or disruption to the display of the text. 
+        </p>
+    
+        <h3>This is a Sample Ordered List</h3>
+        <ol>
+           <li>Ordered list, item 1</li>
+           <li>Ordered list, item 2</li>
+        </ol>
+        
+        <h3>This is a Sample Unordered List</h3>
+        <ul>
+           <li>Unordered list, item 1</li>
+           <li>Unordered list, item 2</li>
+        </ul>
+        
+        <h3>This is a Sample Address</h3>
+        <address>123 Middle Rd<br>Nowhere, MD</address>
+    
+
+    </article><!-- End main article 
+    
+    <!-- Footer section at page bottom -->
+    <footer>
+      <table>
+        <tr>
+        <td>Copyright &copy; 2014, Owner, All Rights Reserved</td>
+        <td style="text-align:right">Designed by Laurie Smith</td>
+        </tr>
+      </table>
+    </footer>
+    
+  </div>  <!-- End wrapper -->
+  
+</body>
+</html>
+
